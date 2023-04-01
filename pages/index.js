@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { AiOutlineSearch } from "react-icons/ai"
 
 export default function Home() {
-  const [quotesPerPage, setQuotesPerPage] = useState(4)
+  const [quotesPerPage, setQuotesPerPage] = useState(3)
   const [searchValue, setSearchValue] = useState('');
   const filteredQuotes = quotes.filter(quote => (
     quote.quote.toLowerCase().includes(searchValue.toLowerCase())
