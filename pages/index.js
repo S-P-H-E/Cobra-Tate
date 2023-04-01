@@ -19,7 +19,7 @@ export default function Home() {
   const currentQuotes = filteredQuotes.slice(firstQuote, lastQuote)
 
   const loadMoreQuotes = () => {
-    setQuotesPerPage(quotesPerPage + 2)
+    setQuotesPerPage(quotesPerPage + 3)
   }
 
   return (
