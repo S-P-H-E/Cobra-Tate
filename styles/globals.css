@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 body {
-    background-color: #0F0F0F;
+    /* background-color: #0F0F0F; */
+    background-color: #111111;
     -webkit-tap-highlight-color: transparent;
+    pointer-events: none;
+}
+
+button {
+    pointer-events: auto;
+}
+
+input {
+    pointer-events: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        pointer-events: none;
+    }
 }
