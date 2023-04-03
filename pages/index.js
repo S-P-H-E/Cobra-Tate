@@ -6,6 +6,8 @@ import { AiOutlineSearch } from "react-icons/ai"
 import { CgAddR } from "react-icons/cg"
 import { AiOutlineSetting } from "react-icons/ai"
 import { BiChevronDown, BiHomeAlt2 } from "react-icons/bi"
+import { BsTwitter } from "react-icons/bs"
+import { FaTiktok, FaYoutube } from "react-icons/fa"
 
 
 export default function Home() {
@@ -40,7 +42,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Cobra Tate</title>
+        <title>Postive Musculinity</title>
         <meta name="description" content="A list of Andrew Tate Quotes" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -67,7 +69,18 @@ export default function Home() {
         <div className="p-7 m-5 flex justify-between items-center text-white flex-col md:flex-row bg-[#101010] border border-[#1d1d1d] rounded-2xl w-full">
             <div className="flex flex-col gap-5 w-full">
               <div className='flex justify-between items-center'>
-                <h1 className='text-2xl'>Quotify</h1>
+                <h1 className='text-2xl'>Postive Musculinity</h1>
+                <div className='flex gap-3'>
+                  <button onClick={() => window.open("https://twitter.com/pmusculinity")}>
+                    <BsTwitter />
+                  </button>
+                  <button onClick={() => window.open("https://www.tiktok.com/@postivemusculinity")}>
+                    <FaTiktok />
+                  </button>
+                  <button onClick={() => window.open("https://www.youtube.com/@PositiveMusculinity")}>
+                    <FaYoutube />
+                  </button>
+                </div>
               </div>
                 <div className='flex justify-center items-center border border-[#58585A] rounded-full w-full'>
                   <AiOutlineSearch className='text-[#58585A] m-2'/>
@@ -81,8 +94,8 @@ export default function Home() {
             </div>
         </div>
 
-        <div className='h-full flex flex-col md:justify-center items-center'>
-          <div className='flex flex-col gap-4 justify-center items-center'>
+        <div className='h-full flex flex-col justify-center items-center w-full max-w-[400px] md:max-w-[700px]'>
+          <div className='flex flex-col gap-4 justify-center items-center w-full'>
             {/* <div className="text-white font-medium p-5 flex flex-col justify-center items-center w-full max-w-[400px] md:max-w-[700px] md:h-[250px] md:text-xl transition-all hover:scale-105 cursor-pointer">
               <p className="whitespace-pre-wrap text-center">{randomQuote ? `"${randomQuote.quote}"` : ''}</p>
               <h1 className="mt-3 text-[#838383] bg-[#181818] px-4 py-2 rounded-full">{randomQuote ? randomQuote.author : ''}</h1>
@@ -101,10 +114,8 @@ export default function Home() {
             {filteredQuotes.length > quotesPerPage ? (
               <button className="bg-white text-gray-800 py-2 px-4 rounded-lg m-5 transition-all hover:scale-95" onClick={loadMoreQuotes}>Load more quotes</button>
             ) : null}
-
           </div>
         </div>
-
       </div>
     </>
   )

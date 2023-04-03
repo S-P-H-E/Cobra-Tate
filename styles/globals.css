@@ -22,3 +22,42 @@ input {
         pointer-events: none;
     }
 }
+
+
+  
+/* width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 20px; /* make it rounded */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #AAAAAA; 
+    border-radius: 20px; /* make it rounded */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #717171; 
+  }
+  
+  /* Make scrollbar draggable */
+  ::-webkit-scrollbar-thumb:vertical {
+    -webkit-appearance: none;
+    border-radius: 20px; /* make it rounded */
+    height: 50px;
+  }
+  
+  ::-webkit-scrollbar-thumb:horizontal {
+    -webkit-appearance: none;
+    border-radius: 20px; /* make it rounded */
+    width: 50px;
+  }
+  
