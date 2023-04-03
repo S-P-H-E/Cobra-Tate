@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Postive Musculinity</title>
+        <title>Positive Masculinity</title>
         <meta name="description" content="A list of Andrew Tate Quotes" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="p-7 m-5 flex justify-between items-center text-white flex-col md:flex-row bg-[#101010] border border-[#1d1d1d] rounded-2xl w-full">
             <div className="flex flex-col gap-5 w-full">
               <div className='flex justify-between items-center'>
-                <h1 className='text-2xl'>Postive Musculinity</h1>
+                <h1 className='text-2xl'>Positive Masculinity</h1>
                 <div className='flex gap-3'>
                   <button onClick={() => window.open("https://twitter.com/pmusculinity")}>
                     <BsTwitter />
