@@ -9,11 +9,7 @@ body {
     pointer-events: none;
 }
 
-button {
-    pointer-events: auto;
-}
-
-input {
+button, input, .Announcement {
     pointer-events: auto;
 }
 

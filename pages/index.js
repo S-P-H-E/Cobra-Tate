@@ -44,8 +44,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Positive Masculinity</title>
-        <meta name="description" content="A list of Andrew Tate Quotes" />
+        <title>S T O I C</title>
+        <meta name="description" content="A list of constructive quotes" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -71,9 +71,9 @@ export default function Home() {
         <div className="p-7 m-5 flex justify-between items-center text-white flex-col md:flex-row bg-[#101010] border border-[#1d1d1d] rounded-2xl w-full">
             <div className="flex flex-col gap-5 w-full">
               <div className='flex justify-between items-center'>
-                <h1 className='text-2xl'>Positive Masculinity</h1>
+                <h1 className='text-2xl'>S T O I C</h1>
                 <div className='flex gap-3'>
-                  <button onClick={() => window.open("https://twitter.com/pmusculinity")}>
+                  <button onClick={() => window.open("https://twitter.com/stoic_words")}>
                     <BsTwitter />
                   </button>
                 </div>
@@ -92,7 +92,7 @@ export default function Home() {
 
         <div className='h-full flex flex-col justify-center items-center w-full max-w-[400px] md:max-w-[700px]'>
           <div className='flex flex-col gap-4 justify-center items-center w-full'>
-            {/* <Announcement /> */}
+            <Announcement />
             {/* <div className="text-white font-medium p-5 flex flex-col justify-center items-center w-full max-w-[400px] md:max-w-[700px] md:h-[250px] md:text-xl transition-all hover:scale-105 cursor-pointer">
               <p className="whitespace-pre-wrap text-center">{randomQuote ? `"${randomQuote.quote}"` : ''}</p>
               <h1 className="mt-3 text-[#838383] bg-[#181818] px-4 py-2 rounded-full">{randomQuote ? randomQuote.author : ''}</h1>
